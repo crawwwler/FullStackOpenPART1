@@ -21,8 +21,7 @@ const Vote = ({ votes }) => {
   )
 }
 
-// BUTTON COMPONENT. TBH, I THINK IT WAS UNNECESSARY AT THIS SPECIFIC
-// SITUATION JUST WANTED TO HAVE MY OWN ELEMENT
+// BUTTON COMPONENT
 const Button = ({ functionality, text }) => {
   return (
     <button onClick={functionality}>{text}</button>

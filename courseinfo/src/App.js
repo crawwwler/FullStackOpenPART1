@@ -33,9 +33,7 @@ const Total = ({ parts }) => {
 
 // MAIN COMPONENT
 const App = () => {
-  // COURSE AS AN OBJECT. 
-  //CONTAINING NAME AND AN ARRAY OF EACH PARTS 
-  //EACH PART HAS A NAME AND NUMBER OF EXERCISES
+
   const course = {
     name: 'Half Stack application development',
     parts: [{

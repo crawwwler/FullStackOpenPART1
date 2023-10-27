@@ -15,17 +15,13 @@ const Button = ({ functionality, text }) => {
   )
 }
 
-
+ // statistic line component
 const StatisticLine = ({ text, amount }) => {
-  // WELL I KNOW USING THIS HELPER VARIABLE IS NOT THE GREATEST SOLUTION
-  // BUT AS IM REALLY NEW TO JAVASCRIPT AND REACT, I THOUGHT JUST DO IT!
+
   let helper = ''
   if (text === 'positive') {
     helper = '%'
   }
-  // THE FINAL RESULT OF STATS IN THE WEB PAGE MIGHT NOT BE THE WELL DESIGNED
-  // CAUSE I HAD A SEARCH AND IT SUGGESTS THAT I SHOULD USE CSS TO STYLE THE 
-  // TABLE BUT I DIDNT KNOW ANY CSS AT ALL. (sorry)
   return (
     <div>
       <table>
@@ -40,9 +36,9 @@ const StatisticLine = ({ text, amount }) => {
   )
 }
 
-// STATISTIC COMPONENT, CONTAINING A CONDITIONAL TO HANDLE THE INITIAL SITUATION
+// statistic component
 const Statistics = ({ stats }) => {
-  // STATS[3] IS THE TOTAL NUMBER OF CLICKS.(no so dynamic, eh?)
+
   if (stats[3].amount === 0) {
     return (
       <div>No feedback given</div>
@@ -89,9 +85,9 @@ const App = () => {
   { rev: 'bad', amount: bad },
   { rev: 'all', amount: clicks },
   { rev: 'average', amount: average },
-  { rev: 'positive', amount: positive }] // COMBINING ALL THE STATS INTO AN ARRAY COULD BE A GOOD 
-  // GOOD CHOICE IN THIS SCENARIO WHERE WE GOT FIXED KIND
-  // OF STATS. IMO.
+  { rev: 'positive', amount: positive }]  
+  
+  
 
   return (
     <div>
